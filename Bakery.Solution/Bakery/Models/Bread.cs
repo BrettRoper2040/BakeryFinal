@@ -34,10 +34,10 @@ namespace BakeryBread
         }
                     public bool DealChecker(int amount)
         {
-            /*if(amount % 3 == 2)
+            if(amount % 3 == 2)
             {
                 return true;
-            }*/
+            }
             return false;
         }
         
