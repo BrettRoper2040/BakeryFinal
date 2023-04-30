@@ -47,5 +47,38 @@ namespace Bakery.Tests
       Donut Homer = new Donut();
       Assert.AreEqual(4, Homer.DonutPrice(2, 0));
     }
+        [TestMethod]
+        public void UseTheDeal()
+    {
+      Donut Homer = new Donut();
+      Assert.AreEqual(5, Homer.DonutPrice(3, 0));
+    }
+    [TestMethod]
+        public void Lotsofdonuts()
+    {
+      Donut Homer = new Donut();
+      Assert.AreEqual(12, Homer.DonutPrice(7, 0));
+    }
+        [TestMethod]
+        public void Nothing()
+    {
+      Donut Homer = new Donut();
+      Assert.AreEqual(0, Homer.DonutPrice(0, 0));
+    }
+    
+            [TestMethod]
+        public void HowManyRealDonuts()
+    {
+      Donut Homer = new Donut();
+      Homer.HowMany = 6;
+      Assert.AreEqual(6, Homer.HowMany);
+    }
+        [TestMethod]
+            public void HowManyFakeDonuts()
+    {
+      Donut Homer = new Donut();
+      Homer.HowMany = 0;
+      Assert.AreEqual(0, Homer.HowMany);
+    }
   }
 }
