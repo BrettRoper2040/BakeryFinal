@@ -4,9 +4,9 @@ using System;
 
 namespace Store
 {
-  class StoreFront
+  public class StoreFront
   {
-    static void Main()
+    public static void Main()
     {
 
     }

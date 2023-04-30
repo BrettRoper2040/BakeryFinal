@@ -65,6 +65,22 @@ namespace Bakery.Tests
       Donut Homer = new Donut();
       Assert.AreEqual(0, Homer.DonutPrice(0, 0));
     }
+
+                    [TestMethod]
+            public void DealAvalYesBread()
+    {
+      Bread Marge = new Bread();
+      Assert.AreEqual(true, Marge.DealChecker(2));
+    }
+
+                [TestMethod]
+            public void DealAvalNoBread()
+    {
+      Bread Marge = new Bread();
+      Assert.AreEqual(false, Marge.DealChecker(3));
+    }
+
+    
     
             [TestMethod]
         public void HowManyRealDonuts()
