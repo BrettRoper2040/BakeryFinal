@@ -4,8 +4,13 @@ using BakeryBread;
 namespace Bakery.Tests
 {
   [TestClass]
-  public class BreadTests
+  public class BreadCalc
   {
-    // Tests will go here!
+    [TestMethod]
+    public void BuyOneGetOne()
+    {
+      Bread Marge = new Bread();
+      Assert.AreEqual(10, Marge.BreadPrice(3, 0));
+    }
   }
 }
