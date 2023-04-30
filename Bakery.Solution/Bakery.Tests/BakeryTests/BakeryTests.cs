@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BakeryBread;
+using BakeryDonut;
 
 namespace Bakery.Tests
 {
@@ -37,6 +38,14 @@ namespace Bakery.Tests
       Bread Marge = new Bread();
       Marge.HowMany = 0;
       Assert.AreEqual(0, Marge.HowMany);
+    }
+
+
+          [TestMethod]
+    public void DonutUseTheDeal()
+    {
+      Donut Homer = new Donut();
+      Assert.AreEqual(4, Homer.DonutPrice(2, 0));
     }
   }
 }
