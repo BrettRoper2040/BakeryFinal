@@ -45,13 +45,13 @@ namespace Bakery.Tests
     public void DonutUseTheDeal()
     {
       Donut Homer = new Donut();
-      Assert.AreEqual(4, Homer.DonutPrice(2, 0));
+      Assert.AreEqual(6, Homer.DonutPrice(3, 0));
     }
         [TestMethod]
         public void UseTheDeal()
     {
       Donut Homer = new Donut();
-      Assert.AreEqual(5, Homer.DonutPrice(3, 0));
+      Assert.AreEqual(6, Homer.DonutPrice(4, 0));
     }
     [TestMethod]
         public void Lotsofdonuts()
@@ -80,7 +80,7 @@ namespace Bakery.Tests
       Assert.AreEqual(false, Marge.DealChecker(3));
     }
 
-    
+
     
             [TestMethod]
         public void HowManyRealDonuts()
