@@ -11,17 +11,17 @@ namespace BakeryDonut
         {      
              while (food > 0)
             { 
-                if (food >= 3)
+                if (food >= 4)
                 {
-                    if((food % 3) == 0)
+                    if((food % 4) == 0)
                     {
-                        price += ((food / 3) * 5);
+                        price += ((food / 4) * 6);
                         food = 0;  
                     }
                     else
                     {
-                        price = price + (((food -(food % 3)) / 3) * 5);
-                        food = (food % 3);
+                        price = price + (((food -(food % 4)) / 4) * 6);
+                        food = (food % 4);
                     }
                 }
                 else
@@ -31,6 +31,14 @@ namespace BakeryDonut
                 }       
             }
             return price;
+        }
+                public bool DealChecker(int amount)
+        {
+            if(amount % 4 == 3)
+            {
+                return true;
+            }
+            return false;
         }
   }
 }
